@@ -14,7 +14,7 @@
         <div class="Container mt-4">
             <div class="card border-info">
                 <div class="card-header bg-info text-white">
-                    <a href="agregar.htm"><button type="button" class="btn btn-dark">Cadastrar Pessoa</button></a>
+                    <a href="cadastrar.htm"><button type="button" class="btn btn-dark">Cadastrar Pessoa</button></a>
                 </div>
                 <div class="card-body">
                     <table  class="table">
@@ -33,8 +33,8 @@
                                 <td><c:out value="${dados.nome}"/></td>
                                 <td><c:out value="${dados.nacionalidade}"/></td>
                                 <td>
-                                    <a>Editar</a>
-                                    <a>Excluir</a>
+                                    <a href="editar.htm?id=${dados.id}" class="btn btn-warning">Editar</a>
+                                    <a href="deletar.htm?id=${dados.id}" class="btn btn-danger">Excluir</a>
                                 </td>
                             </tr>
                             </c:forEach>
